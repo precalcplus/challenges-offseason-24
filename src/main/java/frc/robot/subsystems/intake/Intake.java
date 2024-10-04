@@ -8,11 +8,14 @@ public class Intake extends SubsystemBase {
 
   public Intake(IntakeIO io) {
     // TODO: Implement the constructor
+    IntakeIO m_io = new IntakeIO();
+    IntakeInputsAutoLogged m_inputs = new IntakeInputsAutoLogged();
   }
 
   @Override
   public void periodic() {
     // TODO: Implement this method
+    IntakeIO m_io.updateInputs(IntakeInputs inputs);
   }
 
   public void setRollerVoltage(double voltage) {

@@ -41,8 +41,8 @@ public class Wrist extends SubsystemBase {
 
   public boolean withinTolerance() {
     // TODO: Implement this method
-    m_controller.getPositionTolerance();
-    return true;
+
+    return m_controller.atSetpoint();
   }
 
   public WristInputsAutoLogged getInputs() {

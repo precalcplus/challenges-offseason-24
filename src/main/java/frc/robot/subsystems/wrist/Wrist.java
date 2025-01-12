@@ -31,7 +31,7 @@ public class Wrist extends SubsystemBase {
 
   public void setDesiredAngle(Rotation2d angle) {
     // TODO: Implement this method
-    m_controller.setSetpoint(angle.getRadians());
+    m_controller.setSetpoint(angle.getDegrees());
   }
 
   public Command setDesiredAngleCommand(Rotation2d angle) {
